@@ -35,6 +35,9 @@ export default () => {
               .parseStringPromise(data)
               .then(function (result) {
                 let dist = result.NewDataSet.Table;
+
+                console.log(dist);
+
                 let title = file.name.split('.his')[0];
 
                 if (dist.length == 0) {
