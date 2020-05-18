@@ -5,6 +5,20 @@ const config: IConfig = {
   treeShaking: true,
   publicPath: './',
   outputPath: './docs',
+  history: 'hash',
+  hash: true, //添加hash后缀
+  exportStatic: false,
+  targets: {
+    ie: 10,
+    chrome: 47,
+    firefox: 40,
+    ios: 7,
+    android: 4,
+  },
+  cssnano: {
+    mergeRules: false,
+  },
+  autoprefixer: { flexbox: true },
   routes: [
     {
       path: '/',
