@@ -82,7 +82,7 @@ export default class Excel {
       excelStrings['xl/worksheets/sheet1.xml'].replace('__DATA__', xml),
     );
     let content = await zip.generateAsync({ type: 'blob' });
-    console.log(content);
+
     saveAs(content, data.filename);
   }
 }

@@ -23,7 +23,6 @@ export default () => {
       <Upload.Dragger
         fileList={state}
         beforeUpload={(file) => {
-          console.log(file);
           setLoading(true);
           lib.loadDataFile(file).then((buffer) => {
             if (!buffer) {
